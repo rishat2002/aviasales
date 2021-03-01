@@ -1,0 +1,65 @@
+
+$blue: #2196F3;
+$grey: #A0B0B9;
+$black:#4A4A4A;
+.card {
+    margin: 20px auto;
+    padding: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    font-family: Open Sans;
+    font-style: normal;
+    flex-wrap: wrap;
+    max-width: 600px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.card__price {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color:$blue;
+    width: 50%;
+    height: 36px;
+    margin-bottom: 26px;
+    margin-top: 6px;
+}
+.card__burger {
+    width: 120px;
+    height: 37px;
+    margin-bottom: 20px;
+    padding-left: auto;
+    padding-right: 0px;
+    margin-left: auto;
+}
+  
+.card__header {
+    width: 33.3%;
+    color: $grey;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    height: 18px;
+}
+
+.card__info {
+    width: 33.3%;
+
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color:$black ;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        margin-right: 20px;
+        max-width: 760px;
+    }   
+} 
