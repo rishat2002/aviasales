@@ -1,19 +1,17 @@
+const reducer = (state = { select: 'optimal' }, action) => {
+  switch (action.type) {
+    case 'SELECT_CHEAP':
+      return { select: 'cheap' };
 
-const reducer = (state = {select:'optimal'}, action) => {
-    switch (action.type) {
-      case 'SELECT_CHEAP':
-        return {select:'cheap'};
-  
-      case 'SELECT_FASTER':
-        return {select:'faster'};
-      
-      case 'SELECT_OPTIMAL':  
-        return {select:'optimal'}
+    case 'SELECT_FASTER':
+      return { select: 'faster' };
 
-      default:
-        return state;
-    }
+    case 'SELECT_OPTIMAL':
+      return { select: 'optimal' };
 
-  };
-  
-  export default reducer;
+    default:
+      return state;
+  }
+};
+
+export default reducer;
