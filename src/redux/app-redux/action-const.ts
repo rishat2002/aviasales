@@ -1,0 +1,4 @@
+export const VISIBLE_MASS_LENGTH = 'VISIBLE-MASS-LENGTH'
+export const LOADER_SPIN = 'LOADER-SPIN'
+export const MORE_BUTTON = 'MORE-BUTTON'
+export const INITIAL_STATE = 'INITIAL-STATE'

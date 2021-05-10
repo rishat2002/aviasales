@@ -1,37 +1,46 @@
 {
-    "extends": [
-      "airbnb",
-      "airbnb/hooks",
-      "eslint-config-prettier",
-      "prettier/react"
-    ],
-    "plugins": ["react"],
-    "parser": "babel-eslint",
-    "env": {
-      "browser": true,
-      "jest": true
-    },
-    "rules": {
-      "curly": ["error"],
-      "max-depth": ["warn", 4],
-      "id-length": ["warn", { "exceptions": ["i", "j"], "min": 2 }],
-      "no-lonely-if": ["error"],
-      "no-plusplus": ["error", {"allowForLoopAfterthoughts": true}],
-      "no-restricted-syntax": "off",
-      "class-methods-use-this": "off",
-      "jsx-a11y/href-no-hash": ["off"],
-      "jsx-a11y/anchor-is-valid": ["off"],
-      "jsx-a11y/label-has-associated-control": [ "error", {
-        "assert": "either"
-      }],
-      "react/state-in-constructor": ["off"],
-      "react/jsx-props-no-spreading": ["off"],
-      "react/static-property-placement": "off"
-    },
-    "settings": {
-      "react": {
-        "pragma": "React",
-        "version": "detect"
+  "extends": "airbnb",
+  "plugins": ["react", "react-hooks"],
+  "rules": {
+    "semi": "off",
+    "arrow-parens": "off",
+    "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/control-has-associated-label": "off",
+    "arrow-body-style": "off",
+    "linebreak-style": "off",
+    "no-trailing-spaces": "off",
+    "react/jsx-tag-spacing": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "no-unused-vars": "off",
+    "no-undef": "off",
+    "no-use-before-define": "off",
+    "spaced-comment": "off",
+    "import/order": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "no-console": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "no-param-reassign": "off",
+    "react/self-closing-comp": "warn",
+    "no-shadow": "off",
+    "react/prop-types": "off",
+    "react/require-default-props": "off",
+    "no-redeclare": "off",
+    "no-multiple-empty-lines": "off",
+    "implicit-arrow-linebreak": "off"
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
       }
     }
   }
+}

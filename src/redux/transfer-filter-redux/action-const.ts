@@ -1,0 +1,5 @@
+export const ONE_TRANSFER = 'ONE_TRANSFER'
+export const TWO_TRANSFER = 'TWO_TRANSFER'
+export const THREE_TRANSFER = 'THREE_TRANSFER'
+export const ALL_TRANSFER = 'ALL_TRANSFER'
+export const NO_TRANSFER = 'NO_TRANSFER'
