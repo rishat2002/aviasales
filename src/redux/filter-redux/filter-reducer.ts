@@ -4,7 +4,10 @@ type stateType = { select: 'optimal' | 'cheap' | 'faster' }
 type actionType = {
   type: typeof SELECT_OPTIMAL | typeof SELECT_FASTER | typeof SELECT_CHEAP
 }
-const reducer = (state: stateType = { select: 'optimal' }, action: actionType): stateType => {
+const reducer = (
+  state: stateType = { select: 'optimal' },
+  action: actionType,
+): stateType => {
   switch (action.type) {
     case 'SELECT_CHEAP':
       return { select: 'cheap' }

@@ -27,9 +27,7 @@
     "no-shadow": "off",
     "react/prop-types": "off",
     "react/require-default-props": "off",
-    "no-redeclare": "off",
-    "no-multiple-empty-lines": "off",
-    "implicit-arrow-linebreak": "off"
+    "no-redeclare": "off"
   },
   "env": {
     "browser": true,
@@ -44,3 +42,4 @@
     }
   }
 }
+

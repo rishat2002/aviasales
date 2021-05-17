@@ -1,5 +1,9 @@
 import {
-  ALL_TRANSFER, NO_TRANSFER, ONE_TRANSFER, THREE_TRANSFER, TWO_TRANSFER, 
+  ALL_TRANSFER,
+  NO_TRANSFER,
+  ONE_TRANSFER,
+  THREE_TRANSFER,
+  TWO_TRANSFER,
 } from './action-const'
 
 type actionType = {

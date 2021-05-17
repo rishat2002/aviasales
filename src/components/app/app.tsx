@@ -8,8 +8,15 @@ import TicketList from '../ticket-list'
 import TransferFilter from '../transfer-filter'
 import Filter from '../filter/filter'
 import './index.scss'
-import { getAllTicketsFetch, getFirstTicketsFetch } from '../../redux/tickets-redux/tickets-actions'
-import { loadSpin, moreButtonAction, visibleTickets } from '../../redux/app-redux/app-actions'
+import {
+  getAllTicketsFetch,
+  getFirstTicketsFetch,
+} from '../../redux/tickets-redux/tickets-actions'
+import {
+  loadSpin,
+  moreButtonAction,
+  visibleTickets,
+} from '../../redux/app-redux/app-actions'
 import { RootState } from '../..'
 
 const App: React.FC = () => {

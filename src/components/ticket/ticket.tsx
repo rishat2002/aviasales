@@ -1,8 +1,15 @@
 import React from 'react'
 import './index.scss'
-import { servTicketType, wayInfoType } from '../../redux/tickets-redux/tickets-actions'
+import {
+  servTicketType,
+  wayInfoType,
+} from '../../redux/tickets-redux/tickets-actions'
 
-const formatDateForComponents = (durationTime: number, date: string, stops: Array<string>) => {
+const formatDateForComponents = (
+  durationTime: number,
+  date: string,
+  stops: Array<string>,
+) => {
   const durationHours = Math.floor(durationTime / 60)
   const durationMin = durationHours % 60
   const travelTime = `${durationHours} ч ${durationMin} мин`
@@ -11,9 +18,11 @@ const formatDateForComponents = (durationTime: number, date: string, stops: Arra
   const transferCities = stops.join(', ')
   const departureTime = `${hour}:${min}`
   const hourLandingTime = Number(hour) + durationHours >= 24
-    ? (Number(hour) + durationHours) % 24 : Number(hour) + durationHours
+    ? (Number(hour) + durationHours) % 24
+    : Number(hour) + durationHours
   const minLandingtime = Number(min) + durationMin >= 60
-    ? (Number(min) + durationMin) % 60 : Number(min) + durationMin
+    ? (Number(min) + durationMin) % 60
+    : Number(min) + durationMin
   const landingTime = `${hourLandingTime}:${minLandingtime}`
   return {
     travelTime,
@@ -45,7 +54,10 @@ const viewInfo = (travelWay: wayInfoType) => {
   const location = `${origin} - ${destination}`
   const transferCount = stops.length
   const {
-    travelTime, transferCities, departureTime, landingTime, 
+    travelTime,
+    transferCities,
+    departureTime,
+    landingTime,
   } = formatDateForComponents(duration, date, stops)
   const stringWithInfoStyle: React.CSSProperties = {
     display: 'flex',

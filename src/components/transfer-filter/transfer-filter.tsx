@@ -21,7 +21,9 @@ const TransferFilter = () => {
   /* eslint-disable */
   return (
     <section className="content__transfer-filter">
-      <span className="content__transfer-filter-title">КОЛИЧЕСТВО ПЕРЕСАДОК</span>
+      <span className="content__transfer-filter-title">
+        КОЛИЧЕСТВО ПЕРЕСАДОК
+      </span>
       <label className="content__transfer-filter-label">
         Все
         <Checkbox

@@ -13,14 +13,13 @@
     "jsx": "react-jsx",
     "outDir": "build",
     "noEmit": true,
-    "pretty": false,
     "strict": true,
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "strictBindCallApply": true,
     "strictPropertyInitialization": true,
-    "noImplicitThis": false,
+    "noImplicitThis": true,
     "alwaysStrict": true,
     "resolveJsonModule": true,
     "noUnusedLocals": false,
@@ -48,5 +47,5 @@
     "build",
     "node_modules"
   ]
-
 }
+

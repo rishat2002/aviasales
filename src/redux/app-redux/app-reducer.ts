@@ -1,9 +1,16 @@
 import {
-  INITIAL_STATE, LOADER_SPIN, MORE_BUTTON, VISIBLE_MASS_LENGTH, 
+  INITIAL_STATE,
+  LOADER_SPIN,
+  MORE_BUTTON,
+  VISIBLE_MASS_LENGTH,
 } from './action-const'
 
 type actionType = {
-  type: typeof LOADER_SPIN | typeof MORE_BUTTON | typeof VISIBLE_MASS_LENGTH | typeof INITIAL_STATE
+  type:
+    | typeof LOADER_SPIN
+    | typeof MORE_BUTTON
+    | typeof VISIBLE_MASS_LENGTH
+    | typeof INITIAL_STATE
 }
 
 const appReducer = (
