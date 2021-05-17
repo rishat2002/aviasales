@@ -44,7 +44,7 @@
     "lint": "eslint ./src",
     "lint:fix": "eslint --cache ./src/**/*.{ts,tsx} --fix",
     "format": "prettier ./src --write",
-    "build": "tsc",
+    "build": "react-scripts build",
     "prettier": "prettier --write src/**/*.{ts,tsx}"
   },
   "eslintConfig": {
