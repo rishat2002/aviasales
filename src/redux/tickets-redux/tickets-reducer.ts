@@ -3,8 +3,7 @@ import { servTicketType } from './tickets-actions'
 export interface componentTicketType extends servTicketType {
   key: number
 }
-const parseServTickets = (ticketPackageList: Array<servTicketType>):
-    Array<componentTicketType> => {
+const parseServTickets = (ticketPackageList: Array<servTicketType>): Array<componentTicketType> => {
   let i: number = 0
   const list: componentTicketType[] = [...ticketPackageList].map((item) => {
     const objWithKey = { ...item, key: i }

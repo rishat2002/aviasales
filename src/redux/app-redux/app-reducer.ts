@@ -6,11 +6,14 @@ type actionType = {
   type: typeof LOADER_SPIN | typeof MORE_BUTTON | typeof VISIBLE_MASS_LENGTH | typeof INITIAL_STATE
 }
 
-const appReducer = (state = {
-  visibleMassLength: 10,
-  loaderSpin: true,
-  moreButton: false, 
-}, action: actionType) => {
+const appReducer = (
+  state = {
+    visibleMassLength: 10,
+    loaderSpin: true,
+    moreButton: false,
+  },
+  action: actionType,
+) => {
   switch (action.type) {
     case 'VISIBLE-MASS-LENGTH': {
       const prevVisibleMassLength = state.visibleMassLength

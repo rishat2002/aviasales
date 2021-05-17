@@ -49,26 +49,19 @@ export const filterSort = (list: Array<componentTicketType>,
     })
   }
   if (filterSortObj === 'faster') {
-    return list.sort((prevTicket,
-      nextTicket) => {
-      if (prevTicket.segments[0].duration
-          > nextTicket.segments[0].duration) return 1
-      if (prevTicket.segments[0].duration
-          === nextTicket.segments[0].duration) return 0
-      if (prevTicket.segments[0].duration
-          < nextTicket.segments[0].duration) return -1
+    return list.sort((prevTicket, nextTicket) => {
+      if (prevTicket.segments[0].duration > nextTicket.segments[0].duration) return 1
+      if (prevTicket.segments[0].duration === nextTicket.segments[0].duration) return 0
+      if (prevTicket.segments[0].duration < nextTicket.segments[0].duration) return -1
       return 0
     })
   }
   /* eslint-disable */
   if (filterSortObj === "optimal") {
-    const averagePrice = list.reduce((acc, current) =>
-        (acc += current.price), 0) / list.length
-    const averageDuration = list.reduce((acc, current) =>
-        (acc = acc + current.segments[0].duration), 0) / list.length
+    const averagePrice = list.reduce((acc, current) => (acc += current.price), 0) / list.length
+    const averageDuration = list.reduce((acc, current) => (acc = acc + current.segments[0].duration), 0) / list.length
     const indicator = averagePrice / averageDuration
-    return list.sort((prevTicket, nextTicket) =>
-    {
+    return list.sort((prevTicket, nextTicket) => {
       if (
         prevTicket.price + prevTicket.segments[0].duration * indicator >
         nextTicket.price + nextTicket.segments[0].duration * indicator
