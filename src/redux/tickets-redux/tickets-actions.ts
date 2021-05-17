@@ -20,9 +20,7 @@ export interface servTicketType {
 export function getFirstTicketsFetch(): (dispatch: Dispatch) => Promise<any> {
   return async (dispatch: Dispatch): Promise<any> => {
     await serv.getSearchId()
-    const getObj:
-      | Array<servTicketType>
-      | null = await serv.getFirstPackageTickets()
+    const getObj: Array<servTicketType> | null = await serv.getFirstPackageTickets()
     dispatch({ type: 'FETCH-TICKETS', tickets: getObj })
   }
 }

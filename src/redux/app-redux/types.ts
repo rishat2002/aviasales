@@ -1,8 +1,5 @@
 import {
-  VISIBLE_MASS_LENGTH,
-  LOADER_SPIN,
-  MORE_BUTTON,
-  INITIAL_STATE,
+  VISIBLE_MASS_LENGTH, LOADER_SPIN, MORE_BUTTON, INITIAL_STATE, 
 } from './action-const'
 
 export interface IVisibleMassLength {

@@ -1,10 +1,6 @@
 import { ChangeEvent } from 'react'
 import {
-  ALL_TRANSFER,
-  NO_TRANSFER,
-  ONE_TRANSFER,
-  THREE_TRANSFER,
-  TWO_TRANSFER,
+  ALL_TRANSFER, NO_TRANSFER, ONE_TRANSFER, THREE_TRANSFER, TWO_TRANSFER, 
 } from './action-const'
 
 export const selectOneTransfer = (event: ChangeEvent<HTMLInputElement>) => ({

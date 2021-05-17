@@ -1,14 +1,8 @@
 import {
-  VISIBLE_MASS_LENGTH,
-  INITIAL_STATE,
-  LOADER_SPIN,
-  MORE_BUTTON,
+  VISIBLE_MASS_LENGTH, INITIAL_STATE, LOADER_SPIN, MORE_BUTTON, 
 } from './action-const'
 import {
-  IInitialState,
-  ILoaderSpin,
-  IMoreButton,
-  IVisibleMassLength,
+  IInitialState, ILoaderSpin, IMoreButton, IVisibleMassLength, 
 } from './types'
 
 export const visibleTickets = (): IVisibleMassLength => ({

@@ -46,11 +46,11 @@
   left: 20px;
   width: 22px;
   height: 22px;
-  background: url('../../img/Checkbox.svg') no-repeat;
+  background: url("../../img/Checkbox.svg") no-repeat;
 }
 
 .content__transfer-filter-checkbox:checked + .content__custom-checkbox {
-  background: url('../../img/CheckboxChecked.svg') no-repeat;
+  background: url("../../img/CheckboxChecked.svg") no-repeat;
 }
 
 @media screen and (max-width: 768px) {

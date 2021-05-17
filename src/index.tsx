@@ -20,17 +20,16 @@ const middleware = getDefaultMiddleware({
   immutableCheck: false,
   serializableCheck: false,
   thunk: true,
-});
+})
 export const store = configureStore({
   reducer,
   middleware,
   devTools: process.env.NODE_ENV !== 'production',
-});
+})
 export type RootState = ReturnType<typeof reducer>
 const el = (
   <Provider store={store}>
     <App />
   </Provider>
 )
-ReactDOM.render(el, document.getElementById('root'));
-
+ReactDOM.render(el, document.getElementById('root'))

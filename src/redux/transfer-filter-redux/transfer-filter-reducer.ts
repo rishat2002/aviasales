@@ -1,9 +1,5 @@
 import {
-  ALL_TRANSFER,
-  NO_TRANSFER,
-  ONE_TRANSFER,
-  THREE_TRANSFER,
-  TWO_TRANSFER,
+  ALL_TRANSFER, NO_TRANSFER, ONE_TRANSFER, THREE_TRANSFER, TWO_TRANSFER, 
 } from './action-const'
 
 type actionType = {
@@ -11,11 +7,13 @@ type actionType = {
   target: { checked: boolean }
 }
 const reducer = (
-  state:{ oneTransfer: boolean,
-    twoTransfer: boolean,
-    threeTransfer: boolean,
-    allTransfer: boolean,
-    noTransfer: boolean } = {
+  state: {
+    oneTransfer: boolean
+    twoTransfer: boolean
+    threeTransfer: boolean
+    allTransfer: boolean
+    noTransfer: boolean
+  } = {
     oneTransfer: true,
     twoTransfer: true,
     threeTransfer: true,

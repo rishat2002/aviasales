@@ -16,9 +16,7 @@ class AviaSalesService {
     while (getTicketsStop) {
       try {
         const firstPack: Array<servTicketType> = (
-          await this.serviceConfig.getResource(
-            `tickets?searchId=${this.serviceConfig.id}`,
-          )
+          await this.serviceConfig.getResource(`tickets?searchId=${this.serviceConfig.id}`)
         ).tickets
         getTicketsStop = false
         return firstPack
@@ -36,9 +34,7 @@ class AviaSalesService {
       const tickestPack: {
         tickets: Array<servTicketType>
         stop: boolean
-      } = await this.serviceConfig.getResource(
-        `tickets?searchId=${this.serviceConfig.id}`,
-      )
+      } = await this.serviceConfig.getResource(`tickets?searchId=${this.serviceConfig.id}`)
       if (tickestPack !== null) {
         ticketsPackageMass.push(...tickestPack.tickets)
         getTicketsStop = !tickestPack.stop
